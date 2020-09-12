@@ -28,7 +28,7 @@
             <h3 style="color: #333;">Cadastro de Consignado</h3>
         </div>
 
-        <form action="push.php" method="post">
+        <form action="push.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="exampleFormControlInput1">Nome Completo</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="nm_completo">

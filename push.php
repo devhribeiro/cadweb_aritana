@@ -1,6 +1,6 @@
 <?php
 
-print_r($_POST);
+print_r($_FILES);
 
 
 // Import PHPMailer classes into the global namespace
@@ -34,16 +34,16 @@ try {
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
-    if($_POST['arq_rg'] != ""){
-        $mail->addAttachment($_POST['arq_rg']);    // Optional name
+    if($_FILES['arq_rg'] != ""){
+        $mail->addAttachment($_FILES['arq_rg']['tmp_name'], $_FILES['arq_rg']['name']);    // Optional name
     }
 
-    if($_POST['arq_cpf'] != ""){
-        $mail->addAttachment($_POST['arq_cpf']);    // Optional name
+    if($_FILES['arq_cpf']['tmp_name'] != ""){
+        $mail->addAttachment($_FILES['arq_cpf']['tmp_name'], $_FILES['arq_cpf']['name']);    // Optional name
     }
 
-    if($_POST['arq_compro'] != "") {
-        $mail->addAttachment($_POST['arq_compro']);    // Optional name
+    if($_FILES['arq_compro']['tmp_name'] != "") {
+        $mail->addAttachment($_FILES['arq_compro']['tmp_name'], $_FILES['arq_compro']['name']);    // Optional name
     }
 
     // Content
