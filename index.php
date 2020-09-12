@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Cadastro Aritana SJ</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 <body>
 
     <div class="container">
-        <h1>Hello, world!</h1>
+        <h3>Cadastro de Consignado</h3>
 
         <form>
             <div class="form-group">
@@ -185,7 +185,17 @@
                 <label for="exampleFormControlInput1">Telefone</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(27) XXXXX-XXXX">
             </div>
-            
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nome</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Telefone</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(27) XXXXX-XXXX">
+            </div>
+
             <div class="form-group">
                 <label for="exampleFormControlInput1">Nome</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
@@ -196,14 +206,31 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(27) XXXXX-XXXX">
             </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Nome</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+            <div class="custom-file" style="margin-bottom: 10px; margin-top: 20px;">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Documento de Identidade</label>
+                <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
             </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Telefone</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(27) XXXXX-XXXX">
+            <div class="custom-file" style="margin-bottom: 10px;">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Documento Cpf</label>
+                <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
+            </div>
+
+            <div class="custom-file" style="margin-bottom: 10px;">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Comprovante de Residencia</label>
+                <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div class="form-check" style="display: flex; justify-content: center; align-items: center;">
+                    <label for="exampleFormControlInput1" style="font-size: 10px;">Confirmo que as informações aqui repassadas são veridicas</label>
+                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 40%; margin-left: 20px;">Enviar</button>
             </div>
 
     </div>
