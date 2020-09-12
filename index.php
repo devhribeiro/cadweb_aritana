@@ -30,7 +30,7 @@
 
         <form action="push.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Nome Completo</label>
+                <label for="exampleFormControlInput1">Nome Completo - Não utilize acentuação!</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="nm_completo">
             </div>
 

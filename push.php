@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
 require 'vendor/autoload.php';
-
+header ('Content-type: text/html; charset=UTF-8');
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -47,11 +47,6 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Cadastro de: ' . $_POST['nm_completo'];
     $mail->Body    = '
-    <html>
-        <head>
-            <meta charset="utf-8">
-        </head>
-        <body>
             <div style="font-size: 12px;">
                 Dados Pessoais
 
@@ -93,9 +88,7 @@ try {
                 <p>Nome: ' . $_POST['ref_nm3'] . ' </p>
                 <p>Telefone: ' . $_POST['ref_nm3'] . ' </p>
             
-            </div>
-        </body>
-    </html>';
+            </div>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
