@@ -10,6 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,10 @@
 <body>
 
     <div class="container">
-        <h3>Cadastro de Consignado</h3>
+        <div style="margin-top: 10px">
+            <img src="/assets/img/logo.png" width="150px">
+            <h3 style="color: #333;">Cadastro de Consignado</h3>
+        </div>
 
         <form>
             <div class="form-group">
@@ -132,7 +136,7 @@
                 </select>
             </div>
 
-            <h3>Dados Profissionais</h3>
+            <h3 style="color: #333;">Dados Profissionais</h3>
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Endereço</label>
@@ -174,7 +178,7 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EX: 29.162-080">
             </div>
 
-            <h3>Referencia Pessoais</h3>
+            <h3 style="color: #333;">Referencia Pessoais</h3>
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Nome</label>
@@ -224,12 +228,12 @@
                 <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
             </div>
 
-            <div style="display: flex; align-items: center;">
+            <div style="display: flex; align-items: center; margin-bottom: 50px;">
                 <div class="form-check" style="display: flex; justify-content: center; align-items: center;">
                     <label for="exampleFormControlInput1" style="font-size: 10px;">Confirmo que as informações aqui repassadas são veridicas</label>
                     <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
                 </div>
-                
+
                 <button type="submit" class="btn btn-primary" style="width: 40%; margin-left: 20px;">Enviar</button>
             </div>
 
