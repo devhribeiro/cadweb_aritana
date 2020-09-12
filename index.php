@@ -77,7 +77,7 @@
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Telefone</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(27) XXXXX-XXXX" name="Telefone">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(27) XXXXX-XXXX" name="tel">
             </div>
 
             <div class="form-group">
@@ -121,7 +121,7 @@
 
             <div class="form-group">
                 <label for="exampleFormControlSelect2">Tempo de Residencia</label>
-                <select class="form-control" id="exampleFormControlSelect1" name="s_temp_resi" >
+                <select class="form-control" id="exampleFormControlSelect1" name="ps_temp_resi" >
                     <option>0 a 6 Meses</option>
                     <option>7 a 12 Meses</option>
                     <option>Acima de 13 Meses</option>
@@ -155,7 +155,7 @@
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Bairro</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="prof_bairr">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="prof_bairro">
             </div>
 
             <div class="form-group">
@@ -216,19 +216,19 @@
             </div>
 
             <div class="custom-file" style="margin-bottom: 10px; margin-top: 20px;">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" >
+                <input type="file" class="custom-file-input" id="validatedCustomFile" name="arq_rg">
                 <label class="custom-file-label" for="validatedCustomFile">Documento de Identidade</label>
                 <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
             </div>
 
             <div class="custom-file" style="margin-bottom: 10px;">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" >
+                <input type="file" class="custom-file-input" id="validatedCustomFile" name="arq_cpf">
                 <label class="custom-file-label" for="validatedCustomFile">Documento Cpf</label>
                 <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
             </div>
 
             <div class="custom-file" style="margin-bottom: 10px;">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" >
+                <input type="file" class="custom-file-input" id="validatedCustomFile" name="arq_compro">
                 <label class="custom-file-label" for="validatedCustomFile">Comprovante de Residencia</label>
                 <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
             </div>
