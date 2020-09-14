@@ -31,7 +31,7 @@ try {
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
-    if($_FILES['arq_rg'] != ""){
+    if($_FILES['arq_rg']['tmp_name'] != ""){
         $mail->addAttachment($_FILES['arq_rg']['tmp_name'], $_FILES['arq_rg']['name']);    // Optional name
     }
 
@@ -86,7 +86,7 @@ try {
                 <p>Nome: ' . $_POST['ref_nm2'] . ' </p>
                 <p>Telefone: ' . $_POST['ref_tel2'] . ' </p>
                 <p>Nome: ' . $_POST['ref_nm3'] . ' </p>
-                <p>Telefone: ' . $_POST['ref_nm3'] . ' </p>
+                <p>Telefone: ' . $_POST['ref_tel3'] . ' </p>
             
             </div>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
