@@ -66,7 +66,7 @@ try {
                 <p>Cep: ' . $_POST['ps_cep'] . ' </p>
                 <p>Tipo de Residencia: ' . $_POST['ps_resi'] . ' </p>
                 <p>Tempo de Residencia: ' . $_POST['ps_temp_resi'] . ' </p>
-                <p>Possui Cartão de Credito: ' . $_POST['cartao'] . ' </p>
+                <p>Possui Cartao de Credito: ' . $_POST['cartao'] . ' </p>
                 
                 Dados Profissionais
                 
@@ -76,7 +76,7 @@ try {
                 <p>Bairro:' . $_POST['prof_bairro'] . ' </p>
                 <p>Estado:' . $_POST['prof_uf'] . ' </p>
                 <p>CEP:' . $_POST['prof_cep'] . ' </p>
-                <p>Data de Admissão:' . $_POST['prof_admis'] . ' </p>
+                <p>Data de Admissao:' . $_POST['prof_admis'] . ' </p>
                 <p>Função:' . $_POST['prof_fun'] . ' </p>
                 
                 Referencias Pessoais
