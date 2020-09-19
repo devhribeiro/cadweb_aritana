@@ -9,24 +9,23 @@
     <title>Cadastro Aritana SJ</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
+    <nav class="navbar navbar-dark nav-color">
+    </nav>
 
     <div class="container">
-        <div style="margin-top: 10px">
-            <img src="/assets/img/logo.png" width="150px">
-            <h3 style="color: #333;">Cadastro de Consignado</h3>
+        <div style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+            <img src="/assets/img/logo.png" width="120px">
         </div>
+        <div style="margin: 10px 0 30px 0; display: flex; justify-content: center; align-items: center;">
+            <h5 style="color: #333;">Formulario de cadastro</h5>
+        </div>
+
 
         <form action="push.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
@@ -72,7 +71,7 @@
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="email" >
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="email">
             </div>
 
             <div class="form-group">
@@ -218,28 +217,28 @@
             <div class="custom-file" style="margin-bottom: 10px; margin-top: 20px;">
                 <input type="file" class="custom-file-input" id="validatedCustomFile" name="arq_rg" required>
                 <label class="custom-file-label" for="validatedCustomFile">Documento de Identidade</label>
-                <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
+                <div class="invalid-feedback">Erro ao carregar Identidade</div>
             </div>
 
             <div class="custom-file" style="margin-bottom: 10px;">
                 <input type="file" class="custom-file-input" id="validatedCustomFile" name="arq_cpf">
-                <label class="custom-file-label" for="validatedCustomFile">Documento Cpf</label>
-                <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
+                <label class="custom-file-label" for="validatedCustomFile">Documento CPF</label>
+                <div class="invalid-feedback">Erro ao carregar CPF</div>
             </div>
 
             <div class="custom-file" style="margin-bottom: 10px;">
                 <input type="file" class="custom-file-input" id="validatedCustomFile" name="arq_compro" required>
                 <label class="custom-file-label" for="validatedCustomFile">Comprovante de Residencia</label>
-                <!-- <div class="invalid-feedback">Erro ao carregar Identidade</div> -->
+                <div class="invalid-feedback">Erro ao carregar Comprovante de Residencia</div>
             </div>
 
-            <div style="display: flex; align-items: center; margin-bottom: 50px;">
-                <div class="form-check" style="display: flex; justify-content: center; align-items: center;">
-                    <label for="exampleFormControlInput1" style="font-size: 10px;">Confirmo que as informações aqui repassadas são veridicas</label>
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..." name="aceite" >
+            <div style="display: flex; margin: 30px 0 30px 0; justify-content: space-between;">
+                <div class="form-check" style="display: flex; width: 50%;">
+                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..." name="aceite" required>
+                    <label for="exampleFormControlInput1" style="font-size: 12px; margin-left: 12px">Confirmo que as informações aqui repassadas são veridicas</label>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 40%; margin-left: 20px;">Enviar</button>
+                <button type="submit" class="btn nav-color" style="width: 30%">Enviar</button>
             </div>
 
     </div>
@@ -247,7 +246,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
